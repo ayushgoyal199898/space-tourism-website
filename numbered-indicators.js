@@ -70,11 +70,11 @@ function ChangeContent(e) {
   numbers.forEach(tab => {tab.setAttribute("aria-selected", false)});
   numbers[tabNumber].setAttribute("aria-selected", true);
 
-if (window.matchMedia("(max-width: 45em)").matches) {
-  $("#technology-img").attr("src", technologys[tabNumber].images.landscape);
-} else {
+// if (window.matchMedia("(max-width: 45em)").matches) {
+//   $("#technology-img").attr("src", technologys[tabNumber].images.landscape);
+// } else {
   $("#technology-img").attr("src", technologys[tabNumber].images.portrait);
-}
+// }
 
   $("#technology-name").html(technologys[tabNumber].name);
   $("#technology-description").html(technologys[tabNumber].description);
